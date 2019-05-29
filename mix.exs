@@ -35,6 +35,7 @@ defmodule ComparableDecimal.MixProject do
       # hex.pm stuff
       description: "Comparable (Ord) protocol implementation for Decimal type",
       package: [
+        organization: "coingaming",
         licenses: ["Apache 2.0"],
         files: ["lib", "priv", "mix.exs", "README*", "VERSION*"],
         maintainers: ["timCF"],
