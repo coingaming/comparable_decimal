@@ -1,18 +1,21 @@
 defmodule ComparableDecimal do
-  @moduledoc """
-  Documentation for ComparableDecimal.
-  """
+  use Comp
 
-  @doc """
-  Hello world.
+  defcomparable left :: Decimal, right :: Decimal do
+    left
+    |> Decimal.compare(right)
+    |> case do
+      %Decimal{coef: 1, sign: 1} ->
+        Comp.gt()
 
-  ## Examples
+      %Decimal{coef: 1, sign: -1} ->
+        Comp.lt()
 
-      iex> ComparableDecimal.hello()
-      :world
+      %Decimal{coef: 0} ->
+        Comp.eq()
 
-  """
-  def hello do
-    :world
+      %Decimal{coef: :qNaN} ->
+        raise("can't apply Comparable protocol to left = #{inspect(left)} and right = #{inspect(right)}")
+    end
   end
 end
