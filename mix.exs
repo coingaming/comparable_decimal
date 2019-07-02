@@ -35,7 +35,6 @@ defmodule ComparableDecimal.MixProject do
       # hex.pm stuff
       description: "Comparable (Ord) protocol implementation for Decimal type",
       package: [
-        organization: "coingaming",
         licenses: ["Apache 2.0"],
         files: ["lib", "priv", "mix.exs", "README*", "VERSION*"],
         maintainers: ["timCF"],
@@ -57,7 +56,7 @@ defmodule ComparableDecimal.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:comparable, "~> 1.0.0", organization: "coingaming"},
+      {:comparable, "~> 1.0.0"},
       {:decimal, "~> 1.7"},
       # development tools
       {:excoveralls, "~> 0.8", only: [:dev, :test], runtime: false},

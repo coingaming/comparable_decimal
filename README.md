@@ -13,7 +13,7 @@ by adding `comparable_decimal` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:comparable_decimal, "~> 0.1.0"}
+    {:comparable_decimal, "~> 0.1"}
   ]
 end
 ```
