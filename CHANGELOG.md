@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/coingaming/comparable_decimal/compare/v0.1.2...v0.2.0) (2022-03-07)
+
+
+### Features
+
+* decimal upgrade to 2.0 ([15f01a8](https://github.com/coingaming/comparable_decimal/commit/15f01a8d320529e3eae1ac53bcbaa8f0e8bbe5b7))
+
 # Change Log
 
 ## [v0.1.1](https://github.com/coingaming/comparable_decimal/tree/v0.1.1) (2019-05-29)
