@@ -14,17 +14,17 @@ defmodule ComparableDecimalTest do
   gen_eq_test("comparable eq", @x0, @x1)
 
   test "raise on left NaN" do
-    err = "can't apply Comparable protocol to left = #Decimal<NaN> and right = #Decimal<1>"
+    err = "invalid_operation: operation on NaN"
 
-    assert_raise RuntimeError, err, fn ->
+    assert_raise Decimal.Error, err, fn ->
       @nan <~> @x0
     end
   end
 
   test "raise on right NaN" do
-    err = "can't apply Comparable protocol to left = #Decimal<1> and right = #Decimal<NaN>"
+    err = "invalid_operation: operation on NaN"
 
-    assert_raise RuntimeError, err, fn ->
+    assert_raise Decimal.Error, err, fn ->
       @x0 <~> @nan
     end
   end

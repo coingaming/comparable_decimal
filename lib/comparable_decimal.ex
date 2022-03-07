@@ -5,17 +5,14 @@ defmodule ComparableDecimal do
     left
     |> Decimal.compare(right)
     |> case do
-      %Decimal{coef: 1, sign: 1} ->
+      :gt ->
         Comp.gt()
 
-      %Decimal{coef: 1, sign: -1} ->
+      :lt ->
         Comp.lt()
 
-      %Decimal{coef: 0} ->
+      :eq ->
         Comp.eq()
-
-      %Decimal{coef: :qNaN} ->
-        raise("can't apply Comparable protocol to left = #{inspect(left)} and right = #{inspect(right)}")
     end
   end
 end
