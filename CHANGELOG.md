@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/coingaming/comparable_decimal/compare/v0.2.0...v0.2.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* ex_doc upgrade ([131ea1e](https://github.com/coingaming/comparable_decimal/commit/131ea1e07a063dd6fa72e15618328f99cf927678))
+
 # [0.2.0](https://github.com/coingaming/comparable_decimal/compare/v0.1.2...v0.2.0) (2022-03-07)
 
 
