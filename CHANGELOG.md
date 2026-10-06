@@ -1,3 +1,11 @@
+## [0.2.3](https://github.com/coingaming/comparable_decimal/compare/v0.2.1...v0.2.3) (2026-10-06)
+
+
+### Bug Fixes
+
+* decimal & dialyxir update
+* VERSION file
+
 ## [0.2.1](https://github.com/coingaming/comparable_decimal/compare/v0.2.0...v0.2.1) (2022-03-07)
 
 
