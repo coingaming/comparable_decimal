@@ -28,8 +28,7 @@ defmodule ComparableDecimal.MixProject do
       dialyzer: [
         ignore_warnings: ".dialyzer_ignore",
         plt_add_apps: [
-          :mix,
-          :ex_unit
+          :mix
         ]
       ],
       # ex_doc
@@ -62,10 +61,10 @@ defmodule ComparableDecimal.MixProject do
   defp deps do
     [
       {:comparable, "~> 1.0.0"},
-      {:decimal, "~> 2.0"},
+      {:decimal, "~> 3.0"},
       # development tools
       {:excoveralls, "~> 0.8", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 0.5", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.19", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
       {:boilex, "~> 0.2", only: [:dev, :test], runtime: false}
